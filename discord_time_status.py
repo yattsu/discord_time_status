@@ -1,9 +1,7 @@
-from tendo import singleton
-me = singleton.SingleInstance()
-
 import requests
 import time
 import random
+from config import CONFIG
 
 while True:
   seconds = time.ctime().replace('  ', ' ').split(' ')[3].split(':')[2]
@@ -28,7 +26,7 @@ while True:
   
   headers = {
     'Content-Type': 'application/json',
-    'Authorization': 'YOUR TOKEN',
+    'Authorization': CONFIG['token'],
   }
 
   data = '{"custom_status": {"text": "' + current_time + '", "emoji_id": null, "emoji_name": "' + clock + '", "expires_at": null}}'
