@@ -3,7 +3,6 @@ me = singleton.SingleInstance()
 
 import requests
 import time
-import os
 import random
 
 while True:
