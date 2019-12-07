@@ -1,0 +1,3 @@
+CONFIG = {
+  'token': 'YOUR TOKEN'
+}
